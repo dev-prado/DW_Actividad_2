@@ -34,7 +34,6 @@
         <div class="form-group">
             <b>Rut</b>
             <input type="number" min="1" class="form-control" name="rut"  placeholder="Ingrese su rut">
-            <p>Ingrese su rut, separe el digito verificador</p>
         </div>
         <!-- Texto -->
         <div class="form-group">
