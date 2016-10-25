@@ -33,7 +33,7 @@
         <!-- Rut -->
         <div class="form-group">
             <b>Rut</b>
-            <input type="number" min="1" class="form-control" name="rut"  placeholder="Ingrese su rut">
+            <input type="text" class="form-control" name="rut"  placeholder="Ingrese su rut sin digito verificador">
         </div>
         <!-- Texto -->
         <div class="form-group">

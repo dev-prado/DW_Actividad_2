@@ -23,6 +23,10 @@ function Sexo($texto) {
             $sexo = 'No responde';
     }
     return $sexo;
+} 
+
+function ValidarRut($numero) {
+    return is_int($numero);
 }
 
 // Variables
@@ -66,8 +70,10 @@ if($enviado == 1 && $contenido == 1) {
   print_r($_POST);
   echo '</pre>';
   exit;
-} else if(empty($rut)) {
+} else if (empty($rut)) {
   $error = 'Por favor, ingrese su rut.';
+} else if (!ValidarRut($rut)) {
+  $error = 'Por favor, ingrese un rut valido.';
 } else if(empty($nombre)) {
   $error = 'Por favor, ingrese su nombre.';
 } else if(empty($correo)) {
